@@ -1,2 +1,3 @@
-# snipeit-nodejs-api
-snipeit nodejs api
+npm bun build
+
+npm start
