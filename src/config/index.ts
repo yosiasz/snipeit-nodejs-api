@@ -4,6 +4,8 @@ dotenv.config();
 module.exports = {
     snipeit: {
         token:  process.env.TOKEN,
-        url:  process.env.URL
+        hostname:  process.env.HOSTNAME,
+        port:  process.env.PORT,
+        api_path:  process.env.API_PATH,
     }
 };  

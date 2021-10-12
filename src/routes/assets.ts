@@ -1,10 +1,12 @@
-const router = require('express-promise-router')();
+var express = require('express')
+var router = express.Router()
+
 const assetController = require('../controllers/assets');
 
 router.route('/assets')
       .get(assetController.getAssets)
 
-router.route('/asset')
+router.route('/assets/:assetid')
       .get(assetController.getAsset)  
 
 module.exports = router;
