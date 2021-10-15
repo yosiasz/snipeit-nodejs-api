@@ -1,5 +1,6 @@
 export {};
 
 const assets = require('./assets');
+const accessories = require('./accessories');
 
-module.exports = [assets];
+module.exports = [assets, accessories];
