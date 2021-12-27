@@ -1,12 +1,5 @@
 import express from "express";
 import cors from 'cors';
-//import swaggerUi from 'swagger-ui-express';
-
-//import * as swaggerDocument from '../swagger.json';
-//import * as errorHandler from './utils/errorHandler';
-//import four0four = require('./utils/404')();
-
-//import path from 'path';
 var app = express();
 
 
@@ -20,16 +13,7 @@ let environment = process.env.NODE_ENV;
 //APP USE
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-//app.use(compress());
-//app.use(logger('dev'));
-//app.use(errorHandler.init);
 
-/* var options = {
-  explorer: true,
-  customCss: '.swagger-ui .topbar { display: none }'
-};
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
- */
 var whitelist = [
   'http://localhost:4200'
 ];

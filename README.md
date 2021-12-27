@@ -4,6 +4,13 @@ git clone
 
 cd into snipeit-nodejs-api
 
+add .env file with your specific values
+```
+HOSTNAME=localhost
+PORT=8085
+TOKEN={your_token_here}
+API_PATH="/api/v1"
+```
 npm i
 
 npm bun build
